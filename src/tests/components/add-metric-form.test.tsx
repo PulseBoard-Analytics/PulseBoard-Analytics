@@ -18,7 +18,6 @@ vi.mock("next/navigation", () => ({
 
 import { AddMetricDialog } from "@/components/metrics/add-metric-dialog";
 import * as metricsActions from "@/server/actions/metrics";
-import { toast } from "@/hooks/use-toast";
 
 const mockMetric = {
   id: "m1",
