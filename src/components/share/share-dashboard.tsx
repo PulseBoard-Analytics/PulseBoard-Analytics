@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { KpiTiles } from "@/components/charts/kpi-tiles";
 import { LineChartCard } from "@/components/charts/line-chart-card";
 import { BarChartCard } from "@/components/charts/bar-chart-card";
-import { Globe, Wifi, WifiOff, BarChart3 } from "lucide-react";
+import { Globe, WifiOff, BarChart3 } from "lucide-react";
 import type { MetricRow, SSEMetricEvent } from "@/lib/types";
 import { cn } from "@/lib/utils";
 

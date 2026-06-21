@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { signOut } from "next-auth/react";
-import { Activity, LogOut, Moon, Sun, User, LayoutDashboard, ChevronDown } from "lucide-react";
+import { Activity, LogOut, Moon, Sun, LayoutDashboard, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,

@@ -71,7 +71,7 @@ export function MetricsTable({ metrics, boardId, onDeleted }: MetricsTableProps)
                 </tr>
               </thead>
               <tbody>
-                {sorted.map((metric, i) => (
+                {sorted.map((metric) => (
                   <tr
                     key={metric.id}
                     className="border-b last:border-0 hover:bg-muted/20 transition-colors group"

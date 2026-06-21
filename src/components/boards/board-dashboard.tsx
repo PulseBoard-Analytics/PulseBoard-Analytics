@@ -11,7 +11,7 @@ import { KpiTiles } from "@/components/charts/kpi-tiles";
 import { LineChartCard } from "@/components/charts/line-chart-card";
 import { BarChartCard } from "@/components/charts/bar-chart-card";
 import type { BoardWithMetrics, MetricRow, SSEMetricEvent } from "@/lib/types";
-import { Copy, Globe, Lock, Wifi, WifiOff, Settings2, BarChart3 } from "lucide-react";
+import { Copy, Globe, Lock, Settings2, BarChart3 } from "lucide-react";
 import { EditBoardDialog } from "./edit-board-dialog";
 import type { BoardSummary } from "@/lib/types";
 import { cn } from "@/lib/utils";
