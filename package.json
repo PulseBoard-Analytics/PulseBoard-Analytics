@@ -19,7 +19,7 @@
     "db:studio": "prisma studio"
   },
   "dependencies": {
-    "next": "15.3.4",
+    "next": "15.3.9",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "@auth/prisma-adapter": "^2.9.1",
@@ -58,7 +58,7 @@
     "@types/papaparse": "^5.3.15",
     "@types/uuid": "^10.0.0",
     "eslint": "^9",
-    "eslint-config-next": "15.3.4",
+    "eslint-config-next": "15.3.9",
     "tailwindcss": "^4",
     "typescript": "^5",
     "vitest": "^3.2.3",
