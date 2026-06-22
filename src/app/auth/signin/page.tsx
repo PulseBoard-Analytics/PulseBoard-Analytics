@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Suspense } from "react";
 import { SignInForm } from "@/components/auth/sign-in-form";
 import { Activity } from "lucide-react";
 
@@ -59,7 +60,9 @@ export default function SignInPage() {
             <p className="text-sm text-muted-foreground">Sign in to your account to continue</p>
           </div>
 
-          <SignInForm githubEnabled={githubEnabled} />
+          <Suspense fallback={<div className="space-y-4 animate-pulse"><div className="h-11 bg-muted rounded-xl"/><div className="h-11 bg-muted rounded-xl"/><div className="h-11 bg-muted rounded-xl"/></div>}>
+            <SignInForm githubEnabled={githubEnabled} />
+          </Suspense>
 
           <p className="text-center text-sm text-muted-foreground">
             No account yet?{" "}

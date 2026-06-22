@@ -1,5 +1,16 @@
-import { auth } from "@/lib/auth";
+import NextAuth from "next-auth";
 import { NextResponse } from "next/server";
+
+// Lightweight auth config for Edge middleware — no Prisma, no bcrypt
+const { auth } = NextAuth({
+  secret: process.env.AUTH_SECRET,
+  session: { strategy: "jwt" },
+  providers: [],
+  callbacks: {
+    jwt({ token }) { return token; },
+    session({ session }) { return session; },
+  },
+});
 
 const PUBLIC_PATHS = ["/", "/auth/signin", "/auth/signup", "/auth/error", "/share"];
 
